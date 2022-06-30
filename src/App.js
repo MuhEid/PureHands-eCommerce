@@ -8,6 +8,7 @@ import Payment from './components/Pages/Payment';
 import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
 import Home from './components/Pages/Home';
+import ProductList from './components/Products/ProductList';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
        <Route path="/" element={<Home/>}/> 
        <Route path="/login" element={<Login/>}/> 
        <Route path="/welcome" element={<Welcome/>}/> 
+       <Route path="/allproducts" element={<ProductList/>}/> 
        <Route path="/cart" element={<Cart/>}/> 
        <Route path="/payment" element={<Payment />}/> 
       </Routes>

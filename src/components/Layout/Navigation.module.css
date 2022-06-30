@@ -15,6 +15,10 @@
   display: flex;  
   justify-content: flex-end;
   align-items: center;
+  height: 100px;
+}
+.rightSide > * {
+  margin-right: 1rem;
 }
 
 .btn {
