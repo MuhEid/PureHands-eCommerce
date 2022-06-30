@@ -1,0 +1,82 @@
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.row {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer {
+  background: #f3f1ed;
+  color: #75846e;
+  font-size: 13px;
+  padding: 80px 0 40px 0;
+  width: 100%;
+  font-family: 'Google-sans';
+}
+
+.footer h3{
+    font-family: "Canela";
+    color: #44533c;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+.footerDetails,
+.footerLogo,
+.footerLinks,
+.footerIcons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footerIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icons img {
+  margin: 10px;
+  width: 20px;
+}
+
+.icons :first-child {
+  height: 20px;
+  width: 20px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-info img {
+  margin-right: 0.25rem;
+}
+
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 50px 0 15px 0;
+}
+.copyright {
+  text-align: left;
+  color: #44533c;
+}
+
+@media only screen and (max-width: 1050px) {
+  .footerLinks {
+    display: none;
+  }
+}

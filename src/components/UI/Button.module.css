@@ -1,0 +1,17 @@
+.btn {
+  border: 1px solid #44533c;
+  color: #44533c;
+  background-color: #ffffff;
+  font-size: 15px;
+  font-family: 'Google-sans';
+  padding: 0.75rem;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #44533c;
+  cursor: pointer;
+  font-family: 'Google-sans';
+}

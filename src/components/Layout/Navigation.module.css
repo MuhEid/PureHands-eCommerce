@@ -1,0 +1,65 @@
+.nav {
+  display: flex;
+  width: 87%;
+  margin-left: 3rem;
+  align-items: center !important;
+  font-family: 'Google-sans';
+  font-weight: bold;
+}
+
+.list {
+  width: 80%;
+}
+
+.rightSide {
+  display: flex;  
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn {
+  background: none;
+  border: none;
+  /* display: none; */
+  cursor: pointer;
+  
+}
+
+.list a {
+  margin-right: 2rem;
+  font-size: 14px;  
+  color: #44533c;
+}
+
+.nav input {
+  text-align: end !important;
+}
+
+.cart-num{
+  display: flex;
+  
+
+}
+
+.rightSide p{  
+  background-color:#44533c;
+  padding:1px;
+  border-radius: 50%;
+  color: white;
+  font-weight: 500;
+  font-size: 10px; 
+  height: 16px;
+  width: 16px;
+  text-align: center;
+}
+
+.big{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 0.25rem;
+    color: black;
+
+}
+.big:hover{
+    cursor: pointer;
+}

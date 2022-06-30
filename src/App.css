@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'wintersoulregular';
+  src: url('./fonts/Wintersoul.ttf');
+}
+@font-face {
+  font-family: 'Valkyrie';
+  src: url('./fonts/Valkyrie-BoldExtended.ttf');
+}
+@font-face {
+  font-family: 'Google-sans';
+  src: url('./fonts/GoogleSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'Canela';
+  src: url('./fonts/FontsFree-Net-Canela-Regular.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul{
+  list-style-type: none;
 }

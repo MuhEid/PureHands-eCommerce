@@ -1,0 +1,14 @@
+.pure {
+  font-family: 'wintersoulregular';
+  font-style: italic;
+  color: black;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+.hands {
+  color: #44533c;
+  font-family: 'Valkyrie';
+  font-weight: lighter;
+  font-style: normal;
+}
