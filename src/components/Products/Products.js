@@ -1,16 +1,16 @@
 import React from 'react';
 import DUMMY_DATA from '../../DATA.json';
-import ProductCard from './ProductCard';
+import ProductList from './ProductList';
+import classes from './Products.module.css'
 
-export default function Products(props) {
-  const productList = DUMMY_DATA.map((product) => (    
-    <li>{product.productName}</li>
-  ));
+export default function Products() {
+  // const productList = DUMMY_DATA.map((product) => (
+  //   <li>{product.productName}</li>
+  // ));
 
   return (
-    <section>
-      <ProductCard id={DUMMY_DATA.id}/>
-      <ul>{productList}</ul>
-    </section>
+    <div className={classes.list}>      
+      <ProductList products={DUMMY_DATA} />
+    </div>
   );
 }

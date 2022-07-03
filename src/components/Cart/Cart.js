@@ -1,8 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Breadcrum from '../Layout/Breadcrum';
 import Button from '../UI/Button';
 import classes from './Cart.module.css';
+import CartItems from './CartItems';
 
+// TODO import data file and get the ids from local storage and then present them in cart item and loop over them
 export default function Cart() {
   const navigate = useNavigate();
 
@@ -11,8 +14,12 @@ export default function Cart() {
       ? navigate('/payment')
       : navigate('/login');
   };
+
+ 
+
   return (
     <div>
+      <Breadcrum />
       <section>
         <div className={classes['cart-body']}>
           <div className={classes['cart-header']}>
@@ -20,13 +27,10 @@ export default function Cart() {
             <p>Continue shopping</p>
           </div>
 
-          <div className={classes['cart-td']}>
-            <p>PRODUCT</p>
-            <p>PRICE</p>
-            <p>QUANTITY</p>
-            <p>TOTAL</p>
-          </div>
-          <div>render cart items here</div>
+          
+
+          <CartItems/>       
+     
         </div>
 
         <div className={classes['checkout']}>
@@ -34,7 +38,7 @@ export default function Cart() {
             Subtotal <span>$45.00</span>
           </h4>
           <p>Taxes and shipping calculated at checkout</p>
-          <Button value={'Check Out'} onClick={checkIfLoggedIn}/>          
+          <Button value={'Check Out'} onClick={checkIfLoggedIn} />
         </div>
       </section>
     </div>

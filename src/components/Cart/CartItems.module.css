@@ -1,0 +1,41 @@
+.table {
+  width: 100%;
+  font-family: 'Google-sans';
+  border-collapse: collapse;
+}
+
+.trash img {
+  width: 24px;
+  height: 24px;
+}
+.table tr {
+  height: 8rem;
+}
+
+.table td {
+  font-size: 16px;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.table img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.table th {
+  width: 100%;
+}
+
+.table th td {  
+  font-size: 12px;
+  
+}
+
+.table button {
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}

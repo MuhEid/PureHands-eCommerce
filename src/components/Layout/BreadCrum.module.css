@@ -1,0 +1,9 @@
+.breadcrum{
+    width: 100%;
+    height: 15vh;
+    background-color: #f4efe9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Google-sans';
+}

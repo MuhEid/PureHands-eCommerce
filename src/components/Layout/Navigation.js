@@ -7,10 +7,15 @@ import SearchIcon from '@mui/icons-material/Search';
 import InputAdornment from '@mui/material/InputAdornment';
 import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import CartContext from '../../store/cart-context';
+
 
 export default function Navigation() {
   const [showSidebar, setShowSidebar] = useState(false);
+
+  const cartCtx = useContext(CartContext);
+  const numberofCartItems = cartCtx.items.length;
   return (
     <div className={classes.nav}>
       <div className={classes.list} id={showSidebar ? `${classes.hidden}` : ''}>
@@ -24,6 +29,7 @@ export default function Navigation() {
 
       <div className={classes.rightSide}>
         <Box
+          className={classes.search}
           component="form"
           sx={{
             '& .MuiTextField-root': { m: 1, width: '25ch' },
@@ -49,20 +55,18 @@ export default function Navigation() {
 
         <PersonOutlinedIcon className={classes.big} />
 
-        <div >
-          <Link to="/cart" className={classes['cart-num']}>            
+        <div>
+          <Link to="/cart" className={classes['cart-num']}>
             <ShoppingCartOutlinedIcon className={classes.big} />
-          <p>3</p>
-
+            <p>{numberofCartItems}</p>
           </Link>
-
         </div>
 
         <button
           className={classes.btn}
           onClick={() => setShowSidebar(!showSidebar)}
         >
-          <MenuIcon className={classes.big} />
+          <MenuIcon className={classes.menu} />
         </button>
       </div>
     </div>

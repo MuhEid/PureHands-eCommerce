@@ -1,0 +1,39 @@
+.productCard {
+  display: flex;
+  
+ 
+
+}
+
+.content {
+  text-align: center;
+}
+
+.productCard img {
+  width: 100%;
+  height: 300px;
+}
+
+.addCartBtn {
+  display: inline-block;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  transition: background 0.5s;
+  border: none;
+}
+
+.addCartBtn:hover {
+  background-color: #294728; /* Green */
+  cursor: pointer;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px){
+  .productCard{
+    width: 100%;
+  }
+
+}

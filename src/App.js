@@ -1,5 +1,4 @@
 import './App.css';
-import { Fragment } from 'react';
 import Login from './components/Pages/Login';
 import { Route, Routes } from 'react-router-dom';
 import Welcome from './components/Pages/Welcome';
@@ -9,10 +8,11 @@ import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
 import Home from './components/Pages/Home';
 import ProductList from './components/Products/ProductList';
+import CartProvider from './store/CartProvider';
 
 function App() {
   return (
-    <Fragment>
+    <CartProvider>
       <Header/>
       <Routes>
        <Route path="/" element={<Home/>}/> 
@@ -23,7 +23,7 @@ function App() {
        <Route path="/payment" element={<Payment />}/> 
       </Routes>
       <Footer/>
-    </Fragment>
+    </CartProvider>
   );
 }
 
