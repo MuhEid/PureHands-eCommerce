@@ -4,7 +4,7 @@ import classes from './ProductList.module.css';
 
 export default function ProductList(props) {
 
-  console.log(props.products);
+  // console.log(props.products);
   return (
     <div >
       <ul className={classes.row}>

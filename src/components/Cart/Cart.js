@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import CartContext from '../../store/cart-context';
 import Breadcrum from '../Layout/Breadcrum';
 import Button from '../UI/Button';
 import classes from './Cart.module.css';
 import CartItems from './CartItems';
+
+
 
 // TODO import data file and get the ids from local storage and then present them in cart item and loop over them
 export default function Cart() {
@@ -15,7 +18,9 @@ export default function Cart() {
       : navigate('/login');
   };
 
- 
+ const { totalPrice } = useContext(CartContext)
+
+ let price = `$${totalPrice.toFixed(2)}`
 
   return (
     <div>
@@ -29,16 +34,17 @@ export default function Cart() {
 
           
 
-          <CartItems/>       
+          <CartItems/>  
+
      
         </div>
 
         <div className={classes['checkout']}>
           <h4>
-            Subtotal <span>$45.00</span>
+            Subtotal <span>{price}</span>
           </h4>
           <p>Taxes and shipping calculated at checkout</p>
-          <Button value={'Check Out'} onClick={checkIfLoggedIn} />
+          <Button value={'Check Out'} click={checkIfLoggedIn} />
         </div>
       </section>
     </div>

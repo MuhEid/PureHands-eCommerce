@@ -24,7 +24,7 @@
 .footer h3{
     font-family: "Canela";
     color: #44533c;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 18px;
     letter-spacing: 1px;
     margin-bottom: 2rem;
@@ -54,6 +54,12 @@
   height: 20px;
   width: 20px;
 }
+
+.footerLinks li a {
+  color: #44533c;
+
+}
+
 
 .contact-info {
   display: flex;

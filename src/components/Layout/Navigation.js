@@ -14,8 +14,8 @@ import CartContext from '../../store/cart-context';
 export default function Navigation() {
   const [showSidebar, setShowSidebar] = useState(false);
 
-  const cartCtx = useContext(CartContext);
-  const numberofCartItems = cartCtx.items.length;
+  const {cartNum } = useContext(CartContext);
+  
   return (
     <div className={classes.nav}>
       <div className={classes.list} id={showSidebar ? `${classes.hidden}` : ''}>
@@ -58,7 +58,7 @@ export default function Navigation() {
         <div>
           <Link to="/cart" className={classes['cart-num']}>
             <ShoppingCartOutlinedIcon className={classes.big} />
-            <p>{numberofCartItems}</p>
+            <p>{cartNum}</p>
           </Link>
         </div>
 

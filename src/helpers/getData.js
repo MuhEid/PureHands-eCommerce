@@ -5,21 +5,11 @@ function readDataFromLS(){
     }
     return JSON.parse(data);
     
+    
 }
 
-function addToLocalStorage(productID){
-    let existingData = readDataFromLS()
-    let found = false
-    for (let item of existingData){
-        if (item.id == productID){
-            item.quantity++
-            found = true;
-        }        
-    }
-    if(!found){
-        existingData.push({id:productID, quantity:1})
-    }    
-    localStorage.setItem('items', JSON.stringify(existingData))
+function addToLocalStorage(data){   
+    localStorage.setItem('items', JSON.stringify(data))
 }
 
 module.exports = {

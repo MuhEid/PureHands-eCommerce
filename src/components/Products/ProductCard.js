@@ -7,16 +7,26 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
-import { addToLocalStorage } from '../../helpers/getData';
 import macrame from '../../assets/mac3.webp';
 import classes from './ProductCard.module.css';
+import { useContext } from 'react';
+import CartContext from '../../store/cart-context';
 
 export default function ProductCard(props) {
-  const handleAddToCart = () => {
-    addToLocalStorage(props.id);
-  };
+  // const handleAddToCart = () => {
+  //    addToLocalStorage(props.id);
 
-  console.log(props);
+  // };
+
+  const { addItemToCart } = useContext(CartContext);
+
+  const handleAddBtn = ()=>{
+    // console.log('horaaa', props)
+    addItemToCart(props.id , 1)
+    
+  }
+
+  // console.log(props);
 
   return (
     <li className={classes.productCard}>
@@ -43,7 +53,7 @@ export default function ProductCard(props) {
           <IconButton aria-label="share">
             <ShareIcon />
           </IconButton>
-          <Button value={'Add to Cart'} onClick={handleAddToCart} />
+          <Button value={'Add to Cart'} click={handleAddBtn} />
         </CardActions>
       </Card>
     </li>
