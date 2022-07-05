@@ -13,7 +13,7 @@
 }
 
 .rightSide {
-  display: flex;  
+  display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 100px;
@@ -27,50 +27,83 @@
   border: none;
   /* display: none; */
   cursor: pointer;
-  
 }
 
 .list a {
   margin-right: 2rem;
-  font-size: 14px;  
+  font-size: 14px;
   color: #44533c;
+}
+
+.sidebar{
+  display: none;
 }
 
 .nav input {
   text-align: end !important;
 }
 
-.cart-num{
+.cart-num {
   display: flex;
-  
-
+  position: relative;
 }
-
-.rightSide p{  
-  background-color:#44533c;
-  padding:1px;
+.cart-num p {
+  position: absolute;
+  right: 0;
+  transform: translateX(50%);
+  transform: translate3d(50% , -20% , 0);
+}
+.rightSide p {
+  background-color: #44533c;
+  padding: 1px;
   border-radius: 50%;
   color: white;
   font-weight: 500;
-  font-size: 10px; 
+  font-size: 10px;
   height: 16px;
   width: 16px;
   text-align: center;
 }
 
-.big , .menu{
-    width: 1.5rem;
-    height: 1.5rem;
-    margin: 0 0.25rem;
-    color: black;
-
+.big,
+.menu {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 0.25rem;
+  color: black;
 }
-.big:hover{
-    cursor: pointer;
+.big:hover {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 943px) {
-  .search, .big{
+  .search,
+  .big {
     display: none;
+  }
+  .list a{
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .btn {
+    display: flex;
+  }
+  .nav {
+    display: none;
+  }
+  #hidden {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    width: 100%;
+    background-color: rgba(82, 121, 77, 0.829);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .list a {
+    color: white;
   }
 }

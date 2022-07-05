@@ -5,6 +5,17 @@
     padding: 25px 40px;
 }
 
+.offer {
+  background-color: #44533c;
+  color:white;
+  text-align: center;
+  font-family:'Google-sans';
+  padding:0.5rem;
+}
+
+.header .navigation{
+  display: none;
+}
 
 @media only screen and (max-width: 943px) {
     .header{

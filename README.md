@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# To-do
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## FEATURES to ADD
 
-## Available Scripts
+1. add more products using:
+    webpack 
+    firebase
+    uuid to create uniqe ids for each user or product
+    https://www.youtube.com/playlist?list=PL4cUxeGkcC9jERUGvbudErNCeSZHWUVlb
 
-In the project directory, you can run:
+### FIXES
 
-### `npm start`
+4. add a picture at the end to show an offer 
+7. replace the dropdown menu in the nav bar by one from material ui
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### login inputs 
+1. get the data using useRef() varName.current.value
+2. submit the data to an api using useSatate. 
+3. OR --> make that when the login button is clicked .. 
+                a isLoggedIn item is set in local storage to be "1". 
+                        and is removed when logout is clicked and then reload                          
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Done Tasks 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. add responsive to the nav bar (collapse the list on the left) -- Done
+2. adding the footer -- Done
+3. create the card component -- Done
+4. add the routing to the navbar (when press home we go to home) -- Done
+5. rewatch the css part of max's course and add the modules part -- Done
+7. fix the a tag to be the Link tag
+9. make the logo a component on its own. -- Done
+6. fix the a tag to be the Link tag for the rest of the files -- Done
+3. Fix the colors of the nav bar -- Done
+2. Fix the footer responsivness -- Done
+5. add log in page 
+4. add the form validation from the prev react task. -- DONE
+3. fix the footer class names 
+5. create a button component 
+6. change the intro image to somthing big great mothrfuckign AWESOMEEEE
+### ADD TO CART
+1. add "add to cart" feature taking max course as reference.
+2. show the details if the products in Cart page using context api.
+3. show the total sum of prices.
+4. on clicking checkout go to login or sign up page. 
+1. use swiper to add a slider in homepage.
+2. fix the colors of the p tag in the whole project 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -9,24 +9,25 @@ import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { useState, useContext } from 'react';
 import CartContext from '../../store/cart-context';
-
+import HeaderLinks from './HeaderLinks';
 
 export default function Navigation() {
   const [showSidebar, setShowSidebar] = useState(false);
 
-  const {cartNum } = useContext(CartContext);
-  
+  const { cartNum } = useContext(CartContext);
+
   return (
     <div className={classes.nav}>
-      <div className={classes.list} id={showSidebar ? `${classes.hidden}` : ''}>
+      {/* <div className={classes.list}>
         <Link to="/">HOME</Link>
         <Link to="/allproducts">SHOP</Link>
         <Link to="/allproducts">PRODUCTS</Link>
         <Link to="/allproducts">CONTACT</Link>
         <Link to="/allproducts">ABOUT</Link>
         <Link to="/login">Sign In</Link>
-      </div>
+      </div> */}
 
+      <HeaderLinks />
       <div className={classes.rightSide}>
         <Box
           className={classes.search}
@@ -58,7 +59,7 @@ export default function Navigation() {
         <div>
           <Link to="/cart" className={classes['cart-num']}>
             <ShoppingCartOutlinedIcon className={classes.big} />
-            <p>{cartNum}</p>
+            {cartNum !== 0 && <p>{cartNum}</p>}
           </Link>
         </div>
 
@@ -68,6 +69,11 @@ export default function Navigation() {
         >
           <MenuIcon className={classes.menu} />
         </button>
+
+        {/* <Sidebar
+          className={classes.sidebar}
+          id={showSidebar ? `${classes.hidden}` : ''}
+        /> */}
       </div>
     </div>
   );

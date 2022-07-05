@@ -14,6 +14,7 @@ export default function Login() {
 
     const handleLogout = ()=>{
         localStorage.removeItem('isLoggedIn')
+        navigate('/')
     }
 
   return (
