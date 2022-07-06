@@ -5,7 +5,7 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  height: 300px;
+ 
 }
 
 .intro .background {
@@ -29,7 +29,7 @@ h1 {
 }
 .intro .form {
   display: flex;
-  height: 2.5rem;
+  height: 40px;
   border-bottom: 0.5px solid rgb(255, 255, 255);
 }
 

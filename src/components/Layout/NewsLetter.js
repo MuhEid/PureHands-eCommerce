@@ -7,7 +7,7 @@ export default function NewsLetter() {
   return (
     <Fragment>
       <div className={classes.intro}>
-        <img className={classes.background} src={newsLetterBackground} alt="" />
+        <img className={classes.background} src={newsLetterBackground} alt="" style={{height:'300px'}}/>
         <div className={classes.content}>
           <h1>Subscribe To Our Newsletter</h1>
           <p>Get On The List And Get 10% Off Your First Order!</p>

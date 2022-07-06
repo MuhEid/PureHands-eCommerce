@@ -1,67 +1,64 @@
-import React, { useContext } from 'react';
+import React, { Fragment, useContext } from 'react';
 import Slider from '../Layout/Slider';
 import Button from '../UI/Button';
 import FcIcon from '../../assets/asset 42.svg';
 import TwIcon from '../../assets/asset 43.svg';
 import LiIcon from '../../assets/asset 44.svg';
 import InIcon from '../../assets/asset 45.svg';
+import classes from './BuyProduct.module.css';
 import CartContext from '../../store/cart-context';
 
+
+
+
 const imageSource = [
-  '/notebookOne.jpg',
   '/notebookTwo.jpg',
+  '/notebookOne.jpg',
   '/notebookThree.jpg',
   '/notebookFour.jpg',
 ];
 
 export default function BuyProduct() {
-  return (
-    <div
-      style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}
-    >
-      <div style={{ width: '600px', height: '600px' }}>
-        <Slider sources={imageSource} />
-      </div>
-      <div style={{ margin: '5rem 0' }}>
-        <h1>Leather Notebook</h1>
-        <Button value={'Add to cart'} />
-        <Button value={'Buy it now'} />
-        <p>
-          Currently there are <span>{Math.floor(Math.random() * 10)}</span>{' '}
-          peoples are currently looking at this product
-        </p>
-        <div style={{ width: '100px', height: '24px', display: 'flex' }}>
-          <p>share:</p>
-          <img
-            src={FcIcon}
-            alt=""
-            style={{ width: '16px', height: '16px', marginLeft: '8px' }}
-          />
-          <img
-            src={TwIcon}
-            alt=""
-            style={{ width: '16px', height: '16px', marginLeft: '8px' }}
-          />
-          <img
-            src={LiIcon}
-            alt=""
-            style={{ width: '16px', height: '16px', marginLeft: '8px' }}
-          />
-          <img
-            src={InIcon}
-            alt=""
-            style={{ width: '16px', height: '16px', marginLeft: '8px' }}
-          />
-        </div>
-        <p>Tags:</p>
-        <p>#Leather #handmade #notebooks</p>
 
-        <div>
-          <button>heart Icon wishlist</button>
-          <h4>Customer reviews</h4>
-          <p>There is no reviews yets</p>
+  const { addItemToCart } = useContext(CartContext);
+
+  const handleAddBtn = () => {
+    // console.log('horaaa', props)
+    addItemToCart(1, 1);
+  };
+
+  return (
+    <Fragment>
+      <div className={classes['product-container']}>
+        <div className={classes.slider}>
+          <Slider sources={imageSource} />
+        </div>
+        <div className={classes.details}>
+          <h1>Leather Notebook</h1>
+          <h4>$40.00</h4>
+          <Button value={'Add to cart'} click={handleAddBtn}/>
+          <Button value={'Buy it now'} backColor={'#44533c'} textColor={'white'}/>
+          <p>
+            Currently there are <span>{Math.floor(Math.random() * 10)}</span>{' '}
+            people looking at this product
+          </p>
+          <div className={classes.share}>
+            <p>Share:</p>
+            <img src={FcIcon} alt="" />
+            <img src={TwIcon} alt="" />
+            <img src={LiIcon} alt="" />
+            <img src={InIcon} alt="" />
+          </div>
+          <p>Tags:</p>
+          <p style={{ color: '#44533c', fontWeight:'bold' }}>#leather #handmade #notebooks</p>
+
+          <div className={classes.reviews}>
+            <h2>Customer reviews:</h2>
+            <p>No reviews yet</p>
+          </div>
         </div>
       </div>
-    </div>
+      <h1 className={classes.like}>You may also like</h1>
+    </Fragment>
   );
 }

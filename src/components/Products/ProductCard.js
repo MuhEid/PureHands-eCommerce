@@ -13,20 +13,11 @@ import { useContext } from 'react';
 import CartContext from '../../store/cart-context';
 
 export default function ProductCard(props) {
-  // const handleAddToCart = () => {
-  //    addToLocalStorage(props.id);
-
-  // };
-
   const { addItemToCart } = useContext(CartContext);
 
-  const handleAddBtn = ()=>{
-    // console.log('horaaa', props)
-    addItemToCart(props.id , 1)
-    
-  }
-
-  // console.log(props);
+  const handleAddBtn = () => {
+    addItemToCart(props.id, 1);
+  };
 
   return (
     <li className={classes.productCard}>
@@ -39,11 +30,7 @@ export default function ProductCard(props) {
         />
         <CardContent>
           <h3>{props.productName}</h3>
-          <Typography variant="body2" color="text.secondary">
-            This impressive paella is a perfect party dish and a fun meal to
-            cook together with your guests. Add 1 cup of frozen peas along with
-            the mussels, if you like.
-          </Typography>
+          <Typography variant="body2" color="text.secondary"></Typography>
           <p>${props.price}</p>
         </CardContent>
         <CardActions disableSpacing>

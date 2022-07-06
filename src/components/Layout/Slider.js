@@ -4,9 +4,9 @@ import classes from './Slider.module.css';
 import 'swiper/css';
 // import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import "swiper/css/thumbs";
+import 'swiper/css/thumbs';
 
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, Thumbs } from 'swiper';
 import SliderImage from './SliderImage';
 
 export default function Slider(props) {
@@ -14,7 +14,7 @@ export default function Slider(props) {
     <>
       <Swiper
         // navigation={true}
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Thumbs]}
         spaceBetween={50}
         slidesPerView={1}
         navigation
@@ -26,8 +26,8 @@ export default function Slider(props) {
             <SliderImage path={src} />
           </SwiperSlide>
         ))}
-
       </Swiper>
+      
     </>
   );
 }

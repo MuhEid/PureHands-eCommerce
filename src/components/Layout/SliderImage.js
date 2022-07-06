@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import SlideOne from '../../assets/boho-bedroom.png.webp';
+
 
 export default function SliderImage(props) {
   return (

@@ -10,8 +10,7 @@ export default function ProductPage() {
       <Breadcrum />
 
       <BuyProduct />
-      <h3>You may also like</h3>
-
+      
       <Products />
     </Fragment>
   );

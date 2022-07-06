@@ -1,0 +1,114 @@
+.product-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.slider {
+  width: 500px;
+  height: 500px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem ;
+    width: 400px;
+
+}
+.details h1, .details h4{
+    font-family: 'Canela';
+    font-weight: 600;
+    color: #44533c;
+    margin: 2rem 0;
+}
+.details button{
+    margin-top: 0.5rem;
+   
+}
+
+.details p{
+    margin-top: 0.5rem;
+    /* text-align: center; */
+}
+.details span{
+    color: red;
+}
+
+.share {
+  width: 100px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+.share img {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.reviews{
+    /* text-align: center; */
+    color: #44533c;
+    font-family: 'Canela';
+    margin-top: 2rem;
+    font-weight: 600;
+}
+.reviews p{
+    font-family: 'Google-sans';
+    font-weight: 300;
+    color: black;
+
+}
+
+.like{
+    text-align: center;
+    color: #44533c;
+    font-family: 'Canela';
+    margin: 2rem 0;
+    
+    font-weight: 600;
+    
+}
+
+
+@media only screen and (max-width: 950px) {
+  .product-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .slider {
+    width: 600px;
+    height: 600px;
+  }
+  .details {
+    margin: 0;
+    width: 600px;
+
+
+}
+}
+
+@media only screen and (max-width: 610px) {
+    .product-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+    }
+    .slider {
+      width: 400px;
+      height: 400px;
+    }
+    .details {
+      padding:1rem;
+      width: 100%;
+  
+  
+  }
+  }
+  
