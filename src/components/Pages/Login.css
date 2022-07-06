@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.page-head {
+  font-family: 'Canela';
+  font-weight: 600;
+  color: #44533c;
+  margin-top: 3rem;
+  text-align: center;
+}
+form {
+  margin: 2rem 0;
+}
+
+.form button {
+  width: 25%;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+}
+
+.form input {
+  height: 2rem;
+  width: 100%;
+  border: 1px solid rgba(26, 26, 26, 0.729);
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 14px;
+  height: 40px;
+}
+
+.form input:focus {
+  border: 2px solid #44533c;
+}
+
+.form input::placeholder {
+  color: black;
+}
+
+.form p,
+.form a {
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+  color: black;
+}
+.form p:hover {
+  color: #44533c;
+}
+
+.form a:hover {
+  color: #44533c;
+}

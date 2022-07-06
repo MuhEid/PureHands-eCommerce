@@ -18,7 +18,7 @@ export default function CartItems() {
           <th>TOTAL</th>
         </thead>
         {itemsInCart.map((item) => (
-          <CartItem price={item.price} name={item.productName} id={item.id} quantity={item.quantity}/>
+          <CartItem price={item.price} name={item.productName} id={item.id} quantity={item.quantity} image={item.image}/>
         ))}
       </table>
     </div>

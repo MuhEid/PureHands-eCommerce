@@ -13,6 +13,8 @@
 4. add a picture at the end to show an offer 
 7. replace the dropdown menu in the nav bar by one from material ui
 
+add responsive to footer 
+
                     
 
 

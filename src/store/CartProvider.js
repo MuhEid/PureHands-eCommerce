@@ -3,23 +3,6 @@ import CartContext from './cart-context';
 import data from '../DATA.json';
 import { addToLocalStorage, readDataFromLS } from '../helpers/getData';
 
-const defaultCartState = {
-  items: [],
-  totalAmount: 0,
-};
-
-// cart reducer that define the action you want to do
-// const cartReducer = (state, action) => {
-//     if (action.type === 'ADD'){
-//         const updatedItems = state.items.concat(action.item);
-//         const updatedTotalAmount = state.totalAmount + action.item.price * action.item.amount;
-//         return {
-//             items: updatedItems,
-//             totalAmount: updatedTotalAmount
-//         }
-//     }
-// return defaultCartState;
-// };
 
 export default function CartProvider(props) {
   const [itemsInCart, setItemsInCart] = useState([]);

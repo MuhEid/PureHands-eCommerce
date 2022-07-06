@@ -6,8 +6,6 @@ import Button from '../UI/Button';
 import classes from './Cart.module.css';
 import CartItems from './CartItems';
 
-
-
 // TODO import data file and get the ids from local storage and then present them in cart item and loop over them
 export default function Cart() {
   const navigate = useNavigate();
@@ -18,13 +16,13 @@ export default function Cart() {
       : navigate('/login');
   };
 
- const { totalPrice } = useContext(CartContext)
+  const { totalPrice } = useContext(CartContext);
 
- let price = `$${totalPrice.toFixed(2)}`
+  let price = `$${totalPrice.toFixed(2)}`;
 
   return (
     <div>
-      <Breadcrum />
+      <Breadcrum location={'Cart'} />
       <section>
         <div className={classes['cart-body']}>
           <div className={classes['cart-header']}>
@@ -32,11 +30,7 @@ export default function Cart() {
             <p>Continue shopping</p>
           </div>
 
-          
-
-          <CartItems/>  
-
-     
+          <CartItems />
         </div>
 
         <div className={classes['checkout']}>

@@ -14,6 +14,8 @@ export default function Sidebar() {
         <Link to="/allproducts">PRODUCTS</Link>
         <Link to="/allproducts">CONTACT</Link>
         <Link to="/allproducts">ABOUT</Link>
+        <Link to="/login">LOGIN</Link>
+
         
       </div>
 

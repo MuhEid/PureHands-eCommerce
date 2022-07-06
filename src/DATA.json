@@ -1,31 +1,51 @@
 [
   {
     "id": 1,
-    "productName": "Walnut Dining Table",
-    "price": 1250,
-    "type": "table",
-    "image": "'../../assets/mac3.webp'"
+    "productName": "Leather Notebook",
+    "price": 45.00,
+    "type": "Leather",
+    "image": [
+      "/notebookTwo.jpg",
+      "/notebookOne.jpg",
+      "/notebookThree.jpg",
+      "/notebookFour.jpg"
+    ]
   },
   {
     "id": 2,
-    "productName": "White oak Dining Table", 
-    "price": 1500,
-    "type": "table",
-    "image": "./assets/table2.jpg"
+    "productName": "Candle", 
+    "price": 10.99,
+    "type": "Candle",
+    "image": [
+      "/asset40.jpg",
+      "/asset 22.png",
+      "/asset 18.png",      
+      "/candle2.jpg"
+    ]
   },
   {
     "id": 3,
-    "productName": "Indoor Dining Table",
-    "price": 1750,
-    "type": "table",
-    "image": "./assets/table3.jpg"
+    "productName": "Macrame Bag",
+    "price": 120.99,
+    "type": "Marcrame",
+    "image": [
+      "/macrame1.jpg",
+      "/macrame2.jpg",
+      "/macrame3.jpg",
+      "/macrame1.jpg"
+    ]
   },
   {
     "id": 4,
-    "productName": "Bohemian Style Table",
-    "price": 1000,
-    "type": "table",
-    "image": "./assets/table4.jpg"
+    "productName": "Leather Wallet",
+    "price": 39.49,
+    "type": "Leather",
+    "image": [
+      "/wallet1.jpg",
+      "/wallet2.jpg",
+      "/wallet3.jpg",
+      "/wallet4.jpg"
+    ]
   }
   
 ]
