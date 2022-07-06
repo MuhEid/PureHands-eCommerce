@@ -1,23 +1,29 @@
-.row{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    font-family: 'Google-sans';
-    
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-family: 'Google-sans';
+  max-width: 1600px;
 }
 
 .row li {
-    margin: 0 2rem;
+  margin: 0 2rem;
 }
 
-
-@media only screen and (max-width: 600px){
-    .row{
-      flex-direction: column;
-
-    }
-    .row li {
-      margin-top: 3rem;
-    }
-  
+@media only screen and (max-width: 950px) {
+  .row {
+    flex-direction: column;
   }
+  .row li {
+    margin: 3rem 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+  .row li {
+    margin: 3rem 0;
+  }
+}

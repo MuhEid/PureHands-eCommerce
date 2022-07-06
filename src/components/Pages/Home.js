@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import Products from '../Products/Products';
 import Slider from '../Layout/Slider';
 import Intro from '../Layout/Intro';
+import NewsLetter from '../Layout/NewsLetter';
 
 const imageSource = [
   '/boho-bedroom.png.webp',
@@ -16,6 +17,7 @@ export default function Home() {
       <Intro />
       {/* <Slider sources={imageSource} /> */}
       <Products />
+      <NewsLetter/>
     </Fragment>
   );
 }

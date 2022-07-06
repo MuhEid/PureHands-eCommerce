@@ -13,12 +13,7 @@
 4. add a picture at the end to show an offer 
 7. replace the dropdown menu in the nav bar by one from material ui
 
-### login inputs 
-1. get the data using useRef() varName.current.value
-2. submit the data to an api using useSatate. 
-3. OR --> make that when the login button is clicked .. 
-                a isLoggedIn item is set in local storage to be "1". 
-                        and is removed when logout is clicked and then reload                          
+                    
 
 
 ## Done Tasks 
@@ -45,6 +40,12 @@
 4. on clicking checkout go to login or sign up page. 
 1. use swiper to add a slider in homepage.
 2. fix the colors of the p tag in the whole project 
+### login inputs 
+1. get the data using useRef() varName.current.value
+2. submit the data to an api using useSatate. 
+3. OR --> make that when the login button is clicked .. 
+                a isLoggedIn item is set in local storage to be "1". 
+                        and is removed when logout is clicked and then reload      
 
 
 
