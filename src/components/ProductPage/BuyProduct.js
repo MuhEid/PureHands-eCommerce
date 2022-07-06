@@ -1,4 +1,4 @@
-import React, { Fragment, useContext, useState } from 'react';
+import React, { Fragment, useContext } from 'react';
 import Slider from '../Layout/Slider';
 import Button from '../UI/Button';
 import FcIcon from '../../assets/asset 42.svg';
@@ -10,12 +10,6 @@ import CartContext from '../../store/cart-context';
 import { useParams } from 'react-router-dom';
 import data from '../../DATA.json';
 
-const imageSource = [
-  '/notebookTwo.jpg',
-  '/notebookOne.jpg',
-  '/notebookThree.jpg',
-  '/notebookFour.jpg',
-];
 
 export default function BuyProduct(props) {
 
@@ -23,9 +17,11 @@ export default function BuyProduct(props) {
 
   const { addItemToCart } = useContext(CartContext);
 
-  const ele = data.filter((item) => item.id == id)
+  const ele = data.filter((item) => item.id === parseInt(id))
 
-  console.log(ele[0].image);
+  console.log(ele);
+
+  let price = `$${ele[0].price.toFixed(2)}`
  
 
   const handleAddBtn = () => {    
@@ -41,7 +37,7 @@ export default function BuyProduct(props) {
           </div>
           <div className={classes.details}>
             <h1>{ele[0].productName}</h1>
-            <h4>${ele[0].price}</h4>
+            <h4>{price}</h4>
             <Button value={'Add to cart'} click={handleAddBtn} />
             <Button
               value={'Buy it now'}

@@ -8,10 +8,6 @@
   height: 67px;
 }
 
-.list {
-  width: 80%;
-}
-
 .rightSide {
   display: flex;
   justify-content: flex-end;
@@ -22,25 +18,28 @@
   margin-right: 1rem;
 }
 
-.btn {
+.form {
+  display: flex;
+  height: 30px;
+  border-bottom: 0.5px solid rgb(0, 0, 0);
+}
+
+.form button {
   background: none;
   border: none;
-  /* display: none; */
+  color: white;
   cursor: pointer;
 }
-
-.list a {
-  margin-right: 2rem;
+.form input {
+  border: none;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
   font-size: 14px;
-  color: #44533c;
 }
-
-.sidebar{
-  display: none;
-}
-
-.nav input {
-  text-align: end !important;
+.form img {
+  width: 24px;
+  height: 24px;
 }
 
 .cart-num {
@@ -51,7 +50,7 @@
   position: absolute;
   right: 0;
   transform: translateX(50%);
-  transform: translate3d(50% , -20% , 0);
+  transform: translate3d(50%, -20%, 0);
 }
 .rightSide p {
   background-color: #44533c;
@@ -77,12 +76,15 @@
 }
 
 @media only screen and (max-width: 943px) {
-  .search,
-  .big {
+  .form {
     display: none;
   }
-  .list a{
+  .list a {
     margin-right: 1rem;
+  }
+  .nav{
+    margin: 0;
+    
   }
 }
 
@@ -90,20 +92,12 @@
   .btn {
     display: flex;
   }
-  .nav {
-    display: none;
+
+  .nav{
+    height: 30px;
   }
-  #hidden {
-    position: absolute;
-    left: 0px;
-    top: 50px;
-    width: 100%;
-    background-color: rgba(82, 121, 77, 0.829);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .rightSide{
+    height: 30px;
   }
-  .list a {
-    color: white;
-  }
+  
 }

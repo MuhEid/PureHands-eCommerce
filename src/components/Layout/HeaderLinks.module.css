@@ -1,14 +1,14 @@
 .sidebar {
   display: flex;
-  width: 87%;
+  width: 100%;
   margin-left: 3rem;
   align-items: center !important;
   font-family: 'Google-sans';
   font-weight: bold;
-  height: 67px;
+  /* height: 67px; */
 }
 
-.sidebar .list a { 
+.list a { 
     margin-right: 2rem;
     font-size: 14px;
     color: #44533c;
@@ -36,22 +36,26 @@
 
 @media only screen and (max-width: 600px) {
   .btn {
-    display: flex;
+    display: block;
   }
   .list {
     display: none;
   }
   #hidden {
     position: absolute;
-    left: 0px;
-    top: 50px;
-    width: 100%;
-    background-color: rgba(82, 121, 77, 0.829);
+    right: 50%;
+    top: 140px;
+    width: 50%;
+    height: 140px;
+    padding-left:20px ;
+    background-color: #f7f7f7;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    font-family: 'Google-sans';
+    align-items: flex-start;
   }
   .list a {
-    color: white;
+    color: #44533c;
+    margin-top: 3px;
   }
 }

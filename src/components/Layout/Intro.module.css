@@ -10,6 +10,7 @@
 
 .intro .background {
   width: 100%;
+  
 }
 
 .intro .content {
@@ -59,4 +60,11 @@ input::placeholder {
   font-size: 14px;
   margin-top: 1rem;
   font-family: 'Google-sans';
+}
+
+@media only screen and (max-width: 600px) {
+  .intro .background {
+    display: none;
+  }
+  
 }

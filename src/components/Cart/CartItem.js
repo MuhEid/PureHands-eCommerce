@@ -1,7 +1,6 @@
 import classes from './CartItems.module.css';
 import React, { useContext } from 'react';
 import TrashIcon from '../../assets/delete.png';
-import macrame from '../../assets/mac3.webp';
 import CartContext from '../../store/cart-context';
 
 export default function CartItem(props) {
