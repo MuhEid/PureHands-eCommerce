@@ -10,10 +10,10 @@ export default function Sidebar() {
     <div className={classes.sidebar}>
       <div className={classes.list} id={showSidebar ? `${classes.hidden}` : ''}>
         <Link to="/">HOME</Link>
-        <Link to="/allproducts">SHOP</Link>
+        <Link to="/welcome">SHOP</Link>
         <Link to="/allproducts">PRODUCTS</Link>
-        <Link to="/allproducts">CONTACT</Link>
-        <Link to="/allproducts">ABOUT</Link>
+        <Link to="/contact">CONTACT</Link>
+        <Link to="/about">ABOUT</Link>
         <Link to="/login">LOGIN</Link>
       </div>
 

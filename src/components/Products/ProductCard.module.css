@@ -1,8 +1,6 @@
 .productCard {
   display: flex;
   
- 
-
 }
 
 .content {
@@ -14,26 +12,18 @@
   height: 300px;
 }
 
-.addCartBtn {
-  display: inline-block;
-  background-color: green;
-  color: white;
-  padding: 10px 20px;
-  margin: 10px 0;
-  border-radius: 5px;
-  transition: background 0.5s;
+.productCard .btn {
   border: none;
-}
-
-.addCartBtn:hover {
-  background-color: #294728; /* Green */
+  background:none;
+  text-decoration: underline;
+  text-underline-offset: 1px;
+  color:#44533c ;
   cursor: pointer;
-  color: #fff;
 }
 
-@media only screen and (max-width: 600px){
-  .productCard{
+
+@media only screen and (max-width: 600px) {
+  .productCard {
     width: 100%;
   }
-
 }

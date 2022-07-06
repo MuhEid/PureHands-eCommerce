@@ -13,10 +13,7 @@ export default function Login() {
     navigate('/welcome');
   };
 
-  const handleLogout = () => {
-    localStorage.removeItem('isLoggedIn');
-    navigate('/');
-  };
+  
 
   return (
     <Fragment>

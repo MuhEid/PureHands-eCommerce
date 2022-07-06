@@ -6,7 +6,6 @@ import Button from '../../components/UI/Button';
 import IconButton from '@mui/material/IconButton';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
-import macrame from '../../assets/mac3.webp';
 import classes from './ProductCard.module.css';
 import { useContext } from 'react';
 import CartContext from '../../store/cart-context';
@@ -26,17 +25,17 @@ export default function ProductCard(props) {
 
   return (
     <li className={classes.productCard}>
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: 400 }}>
         <CardMedia
           component="img"
           height="345"
-          image={macrame}
+          image={require('../../assets' + props.image[0])}
           alt="Paella dish"
         />
         <CardContent>
           <h3>{props.productName}</h3>         
           <p>${props.price}</p>
-          <Button value={'see details'} click={goToElement}/>
+          <button onClick={goToElement} className={classes.btn}>See details</button>
         </CardContent>
         <CardActions disableSpacing>
           <IconButton aria-label="add to favorites">

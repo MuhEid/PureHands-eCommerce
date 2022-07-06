@@ -3,7 +3,8 @@
   width: 100%;
   justify-content: center;
   font-family: 'Google-sans';
-  max-width: 1600px;
+  max-width: 1300px;
+  align-self: center;
 }
 
 .row li {
