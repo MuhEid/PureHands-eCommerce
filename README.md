@@ -1,6 +1,26 @@
 # To-do
 
-## FEATURES to ADD
+
+
+## FIXES
+
+1. fix the design of Cart page 
+2. finish shop page 
+2. add payment, contact, about page 
+3. add responsive to footer 
+4. a part in homepage that shows tow pictures of  offers and a button 
+
+
+## FEATURES TO ADD NOW
+
+1. FILTERS 
+2. more products 
+
+
+
+
+
+## FEATURES to ADD  LATER
 
 1. add more products using:
     webpack 
@@ -8,12 +28,10 @@
     uuid to create uniqe ids for each user or product
     https://www.youtube.com/playlist?list=PL4cUxeGkcC9jERUGvbudErNCeSZHWUVlb
 
-### FIXES
 
-4. add a picture at the end to show an offer 
-7. replace the dropdown menu in the nav bar by one from material ui
 
-add responsive to footer 
+
+
 
                     
 
@@ -47,7 +65,10 @@ add responsive to footer
 2. submit the data to an api using useSatate. 
 3. OR --> make that when the login button is clicked .. 
                 a isLoggedIn item is set in local storage to be "1". 
-                        and is removed when logout is clicked and then reload      
+                        and is removed when logout is clicked and then 
+                        reload 
+4. add a picture at the end to show an offer 
+7. replace the dropdown menu in the nav bar by one from material ui     
 
 
 

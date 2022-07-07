@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Fragment>
       <Intro />      
-      <Products />
+      <Products headline={'Shop Our Bestsellers'} numb={4}/>
       <NewsLetter />
     </Fragment>
   );

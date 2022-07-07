@@ -15,7 +15,7 @@
     "id": 2,
     "productName": "Candle", 
     "price": 10.99,
-    "type": "Candle",
+    "type": "Candles",
     "image": [
       "/asset40.jpg",
       "/asset 22.png",
@@ -46,6 +46,80 @@
       "/wallet3.jpg",
       "/wallet4.jpg"
     ]
+  },
+  {
+    "id": 5,
+    "productName": "Leather Wallet",
+    "price": 39.49,
+    "type": "Leather",
+    "image": [
+      "/wallet1.jpg",
+      "/wallet2.jpg",
+      "/wallet3.jpg",
+      "/wallet4.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "productName": "Leather Wallet",
+    "price": 39.49,
+    "type": "Leather",
+    "image": [
+      "/wallet1.jpg",
+      "/wallet2.jpg",
+      "/wallet3.jpg",
+      "/wallet4.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "productName": "Leather Wallet",
+    "price": 39.49,
+    "type": "Leather",
+    "image": [
+      "/wallet1.jpg",
+      "/wallet2.jpg",
+      "/wallet3.jpg",
+      "/wallet4.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "productName": "Leather Wallet",
+    "price": 39.49,
+    "type": "Leather",
+    "image": [
+      "/wallet1.jpg",
+      "/wallet2.jpg",
+      "/wallet3.jpg",
+      "/wallet4.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "productName": "Leather Wallet",
+    "price": 39.49,
+    "type": "Leather",
+    "image": [
+      "/wallet1.jpg",
+      "/wallet2.jpg",
+      "/wallet3.jpg",
+      "/wallet4.jpg"
+    ]
   }
+  ,
+  {
+    "id": 10,
+    "productName": "Leather Wallet",
+    "price": 39.49,
+    "type": "Leather",
+    "image": [
+      "/wallet1.jpg",
+      "/wallet2.jpg",
+      "/wallet3.jpg",
+      "/wallet4.jpg"
+    ]
+  }
+
   
 ]

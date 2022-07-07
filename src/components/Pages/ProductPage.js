@@ -11,7 +11,7 @@ export default function ProductPage() {
 
       <BuyProduct />
       
-      <Products />
+      <Products headline={'You may also like'} numb={5}/>
     </Fragment>
   );
 }

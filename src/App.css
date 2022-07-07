@@ -15,7 +15,6 @@
   src: url('./fonts/Canela-Thin.ttf');
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +31,7 @@ a {
   text-decoration: none;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
+

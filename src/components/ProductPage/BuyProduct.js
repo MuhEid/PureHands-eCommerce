@@ -87,9 +87,7 @@ export default function BuyProduct(props) {
               <p>No reviews yet</p>
             </div>
           </div>
-        </div>
-        <h1 className={classes.like}>You may also like</h1>
-     
+        </div>    
       
     </Fragment>
   );

@@ -7,20 +7,24 @@ export default function CartItems() {
   const { itemsInCart } = useContext(CartContext);
 
   return (
-    <div>
-      <table className={classes.table}>
-        <thead className={classes['cart-td']}>
-          <th>PRODUCT</th>
-          <th></th>
-          <th>PRICE</th>
-          <th>QUANTITY</th>
-          <th></th>
-          <th>TOTAL</th>
-        </thead>
+    <div className={classes.table}>
+      <div className={classes['cart-th']}>
+        <p style={{ width:'50%', marginLeft:'110px' }}>PRODUCT</p>
+        <p style={{ width:'20%'}}>PRICE</p>
+        <p>QUANTITY</p>
+        <p style={{ marginLeft:'10px'}}>TOTAL</p>
+      </div>
+      <div >
         {itemsInCart.map((item) => (
-          <CartItem price={item.price} name={item.productName} id={item.id} quantity={item.quantity} image={item.image}/>
+          <CartItem
+            price={item.price}
+            name={item.productName}
+            id={item.id}
+            quantity={item.quantity}
+            image={item.image}
+          />
         ))}
-      </table>
+      </div>
     </div>
   );
 }

@@ -6,8 +6,23 @@ import FcIcon from '../../assets/asset 42.svg';
 import TwIcon from '../../assets/asset 43.svg';
 import LiIcon from '../../assets/asset 44.svg';
 import InIcon from '../../assets/asset 45.svg';
+import * as Scroll from 'react-scroll';
+import {
+  // Link,
+  DirectLink,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from 'react-scroll';
+
 
 export default function Footer() {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <div>
       <div className={classes['footer']}>
@@ -46,6 +61,9 @@ export default function Footer() {
               </ul>
             </div>
           </div>
+          <button onClick={scrollToTop} className={classes.backToTop}>
+          Up
+        </button>
           <hr />
           <p className={classes['copyright']}>
             Copyright &#169; 2022, Pure Hands Powered By Muhammed Eid

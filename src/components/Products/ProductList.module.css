@@ -3,28 +3,17 @@
   width: 100%;
   justify-content: center;
   font-family: 'Google-sans';
-  max-width: 1300px;
+  max-width: 1400px;
   align-self: center;
-}
+  flex-wrap: wrap ;
 
-.row li {
-  margin: 0 2rem;
 }
 
 @media only screen and (max-width: 950px) {
   .row {
     flex-direction: column;
+    /* padding: 0 15%; */
+    max-width: 400px;
   }
-  .row li {
-    margin: 3rem 0;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .row {
-    flex-direction: column;
-  }
-  .row li {
-    margin: 3rem 0;
-  }
+  
 }

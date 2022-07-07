@@ -1,26 +1,29 @@
 .productCard {
   display: flex;
-  
+  flex-direction: column;
+  margin: 1rem;
+  color: #44533c;
 }
 
 .content {
   text-align: center;
 }
 
-.productCard img {
-  width: 100%;
+.cart-image img {
   height: 300px;
+  width: 100%;
 }
 
 .productCard .btn {
   border: none;
-  background:none;
+  background: none;
   text-decoration: underline;
   text-underline-offset: 1px;
-  color:#44533c ;
+  color: #44533c;
   cursor: pointer;
+  font-size: 16px;
+  margin: 0.75rem 0;
 }
-
 
 @media only screen and (max-width: 600px) {
   .productCard {

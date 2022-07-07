@@ -50,7 +50,7 @@ export default function CartProvider(props) {
     };
 
     let newArr = [...itemsInCart];
-    console.log(itemsInCart);
+    // console.log(itemsInCart);
 
     // console.log(newArr)
     let index = newArr.findIndex((index) => index.id == id);
@@ -63,6 +63,8 @@ export default function CartProvider(props) {
     setItemsInCart(newArr);
     setCartNum((prevState) => prevState + quantity);
     setTotalPrice((prevState) => prevState + itemsToAdd.price * quantity);
+    console.log(itemsToAdd)
+    
 
     addToLocalStorage(itemsInCart);
   };

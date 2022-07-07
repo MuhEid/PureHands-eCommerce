@@ -1,14 +1,14 @@
-section {
+
+
+.cart-body {
+  font-family: 'Google-sans';
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   padding: 1rem;
   row-gap: 5rem;
   margin: 2rem 15%;
-}
-
-.cart-body {
-  font-family: 'Google-sans';
+  max-width: 1400px;
 }
 .cart-header {
   display: flex;
@@ -30,17 +30,6 @@ section {
 }
 .cart-header p:hover{
     color: #44533c;
-}
-
-.cart-td {
-  display: flex;
-  width: 100%;
-}
-
-.cart-td p {
-  width: 100%;
-  font-size: 12px;
-  flex: 1;
 }
 
 .checkout {

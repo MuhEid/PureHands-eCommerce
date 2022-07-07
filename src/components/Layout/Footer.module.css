@@ -69,6 +69,21 @@
 .contact-info img {
   margin-right: 0.25rem;
 }
+.backToTop {
+  background: #44533c;
+  border: 1px solid #44533c;
+  border-radius: 100%;
+  position: absolute;
+  text-align: end;
+  display: flex;
+  color: white;
+  align-self: flex-end;
+  justify-content: flex-end;
+  font-size: 20px;
+  padding: 8px;
+  font-family: 'Canela';
+  font-weight: 600;
+}
 
 .footer hr {
   border: none;

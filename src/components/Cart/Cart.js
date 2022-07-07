@@ -18,21 +18,21 @@ export default function Cart() {
 
   const { totalPrice } = useContext(CartContext);
 
-  let price = `$${totalPrice.toFixed(2)}`;
+  let price = `$${Math.abs(totalPrice).toFixed(2)}`;
+  console.log(totalPrice);
 
   return (
     <div>
       <Breadcrum location={'Cart'} />
-      <section>
-        <div className={classes['cart-body']}>
-          <div className={classes['cart-header']}>
-            <h3>Your cart</h3>
-            <p>Continue shopping</p>
-          </div>
 
+      <div className={classes['cart-body']}>
+        <div className={classes['cart-header']}>
+          <h3>Your cart</h3>
+          <p>Continue shopping</p>
+        </div>
+        <div>
           <CartItems />
         </div>
-
         <div className={classes['checkout']}>
           <h4>
             Subtotal <span>{price}</span>
@@ -40,7 +40,7 @@ export default function Cart() {
           <p>Taxes and shipping calculated at checkout</p>
           <Button value={'Check Out'} click={checkIfLoggedIn} />
         </div>
-      </section>
+      </div>
     </div>
   );
 }
