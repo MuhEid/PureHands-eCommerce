@@ -7,22 +7,39 @@ import LiIcon from '../../assets/asset 44.svg';
 import InIcon from '../../assets/asset 45.svg';
 import classes from './BuyProduct.module.css';
 import CartContext from '../../store/cart-context';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import data from '../../DATA.json';
+import plusIcon from '../../assets/asset 38.svg'
+import minusIcon from '../../assets/asset 37.svg'
+
+
 
 
 export default function BuyProduct(props) {
 
+  const navigate = useNavigate();
+
+  const goToPayment = ()=>{
+    navigate('/payment')
+  }
+
   let { id } = useParams();
 
-  const { addItemToCart } = useContext(CartContext);
+  const { addItemToCart , itemsInCart } = useContext(CartContext);
 
-  const ele = data.filter((item) => item.id === parseInt(id))
+  let thisProduct = itemsInCart.filter((p)=> p.id == id)
 
-  console.log(ele);
+  const  handleQuantityShowing = (test)=>{
+    if(test){
+      test.push({quantity:0});    
+    }
+    return test
+  }
+ let test = handleQuantityShowing(thisProduct)[0].quantity;
 
+
+  const ele = data.filter((item) => item.id === parseInt(id)) 
   let price = `$${ele[0].price.toFixed(2)}`
- 
 
   const handleAddBtn = () => {    
     addItemToCart(ele[0].id, 1);
@@ -37,12 +54,18 @@ export default function BuyProduct(props) {
           </div>
           <div className={classes.details}>
             <h1>{ele[0].productName}</h1>
-            <h4>{price}</h4>
+            <h3>{price}</h3>
+            <div className={classes.counter}>
+              <button><img src={minusIcon} alt="" /></button>
+              <p>{test || thisProduct[0].quantity}</p>
+              <button onClick={handleAddBtn}><img src={plusIcon} alt="" /></button>
+            </div>
             <Button value={'Add to cart'} click={handleAddBtn} />
             <Button
               value={'Buy it now'}
               backColor={'#44533c'}
               textColor={'white'}
+              click={goToPayment}
             />
             <p>
               Currently there are <span>{Math.floor(Math.random() * 10)} </span> people looking at this product
@@ -71,3 +94,5 @@ export default function BuyProduct(props) {
     </Fragment>
   );
 }
+
+

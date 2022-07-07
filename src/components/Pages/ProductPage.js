@@ -7,7 +7,7 @@ import Products from '../Products/Products';
 export default function ProductPage() {
   return (
     <Fragment>
-      <Breadcrum />
+      <Breadcrum location={'Products'} />
 
       <BuyProduct />
       

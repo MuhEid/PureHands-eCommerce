@@ -37,6 +37,12 @@
   color: black;
   font-size: 14px;
 }
+
+.form input::placeholder {
+  
+  color: black;
+  font-size: 12px;
+}
 .form img {
   width: 24px;
   height: 24px;
