@@ -11,16 +11,7 @@
 4. a part in homepage that shows tow pictures of  offers and a button 
 
 
-## FEATURES TO ADD NOW
-
-1. FILTERS 
-2. more products 
-
-
-
-
-
-## FEATURES to ADD  LATER
+## FEATURES to ADD LATER
 
 1. add more products using:
     webpack 
@@ -52,7 +43,7 @@
 4. add the form validation from the prev react task. -- DONE
 3. fix the footer class names 
 5. create a button component 
-6. change the intro image to somthing big great mothrfuckign AWESOMEEEE
+6. change the intro image to somthing big 
 ### ADD TO CART
 1. add "add to cart" feature taking max course as reference.
 2. show the details if the products in Cart page using context api.
