@@ -9,14 +9,9 @@ import InIcon from '../../assets/asset 45.svg';
 import * as Scroll from 'react-scroll';
 import {
   // Link,
-  DirectLink,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from 'react-scroll';
 
+  animateScroll as scroll,
+} from 'react-scroll';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -62,8 +57,8 @@ export default function Footer() {
             </div>
           </div>
           <button onClick={scrollToTop} className={classes.backToTop}>
-          Up
-        </button>
+            Up
+          </button>
           <hr />
           <p className={classes['copyright']}>
             Copyright &#169; 2022, Pure Hands Powered By Muhammed Eid
